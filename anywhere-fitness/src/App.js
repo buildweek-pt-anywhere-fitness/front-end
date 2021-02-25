@@ -7,9 +7,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Route path='/signup'>
-        <Signup />
-      </Route>
+      <Signup />
     </div>
   );
 }
