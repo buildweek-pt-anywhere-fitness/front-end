@@ -1,0 +1,18 @@
+.signup-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: initial;
+  /* align-items: initial; */
+}
+.signup-form label {
+  width: 50%;
+}
+.signup-form input {
+  width: 90%;
+}
+.signup-form .email-label {
+  width: 80%;
+}
