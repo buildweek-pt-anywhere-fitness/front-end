@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter, Link, Route} from 'react-router-dom';
 import '../signup.css'
 
 function Signup() {
@@ -36,7 +37,7 @@ function Signup() {
             type="number"
           />
         </label>
-        <h4>Experience Level</h4>
+        <h3>Experience Level</h3>
         <label className="exp-label"> Beginner
           <input
             name="exp"
@@ -55,7 +56,7 @@ function Signup() {
             type="radio"
           />
         </label>
-        <h4>Preferred Training Style</h4>
+        <h3>Preferred Training Style</h3>
         <label>
           <input className="cb-input"
             name=""
@@ -104,8 +105,71 @@ function Signup() {
             type="checkbox"
           /> Dancing
         </label>
-        <button className="payment-btn">Continue to Payment</button>
-      </form> {/* close form */}
+        <h3>Payment Information</h3>
+        <label className="pay-label"> Visa
+          <input
+            name="payment"
+            type="radio"
+          />
+        </label>
+        <label className="pay-label"> Venmo
+          <input
+            name="payment"
+            type="radio"
+          />
+        </label>
+        <label className="pay-label"> Paypal
+          <input
+            name="payment"
+            type="radio"
+          />
+        </label>
+        <h4>Billing Address</h4>
+        <label> Street
+          <input
+            name="street"
+            type="text"
+          />
+        </label>
+        <label> City
+          <input
+            name="city"
+            type="text"
+          />
+        </label>
+        <label> State
+          <input
+            name="state"
+            type="text"
+          />
+        </label>
+        <label> Zip Code
+          <input
+            name="zip"
+            type="text"
+          />
+        </label>
+        <h4>Card Info</h4>
+        <label> Cardholder Name
+          <input
+            name="cardName"
+            type="text"
+          />
+        </label>
+        <label> Card Number
+          <input
+            name="cardNumber"
+            type="number"
+          />
+        </label>
+        <label> Security Code
+          <input className="code-input"
+            name="code"
+            type="number"
+          />
+        </label>
+        <button className="submit-btn">Submit</button>
+      </form>
     </div>
   );
 }
