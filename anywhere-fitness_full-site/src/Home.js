@@ -52,7 +52,7 @@ function App() {
                     <div className="membership-ad-container">
                         <h2>Membership Is Easy!</h2>
                         <p>Become an <div className="orange">Anywhere</div> Fitness member today when you register for a free fitness profile. Download our app. Answer a few simple questions and find a trainer or start your workout.</p>
-                        <p>«<div className="orange"><a href="">read more</a></div></p>
+                        <div className="btn-container"><button class="register-btn" type="submit">Join Now!</button></div>
                     </div>
                 </div>
             </section>
