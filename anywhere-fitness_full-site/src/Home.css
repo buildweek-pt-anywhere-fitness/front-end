@@ -1,0 +1,287 @@
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Styles by Shenica Graham begin here. *******************************************/
+.container {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: whitesmoke;
+  height: 100vh;
+  width: 95%;
+  margin: auto;
+  padding: 10px;
+  font-size: 62.5%;
+}
+h2 {
+  font-size: 2rem;
+  color: #000000;
+  text-shadow: #fc0 1px 0 10px;
+}
+.logo-header {
+  background: url('./img/anywhere-fitness_logo-hdr_bg.png');
+  height: 95px;
+  background-repeat: no-repeat;
+  background-color: whitesmoke;
+  overflow: hidden;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.app-nav-search-bar {
+  margin-top: 13px;
+  width: 33%;
+  color: #ffffff;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.top-nav {
+  margin-top: 5px;
+  margin-right: 15px;
+  width: 8rem;
+  color: #ffffff;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-around;
+}
+.top-nav a, .top-nav a:visited {
+  color: #ffffff;
+  padding-right: 1rem;
+  text-decoration: none;
+}
+.top-nav a:hover {
+  color: #EF4723; 
+}
+.search-bar {
+  margin-top: 0;
+}
+.search-site {
+  border-radius: 2px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.search-btn {
+  background: #EF4723;
+  border-radius: 2px;
+  margin-right: 5px;
+  padding: 5px;
+  font-weight: bold;
+}
+.main-nav {
+  margin-top: 25px;
+  width: 100%;
+  color: #070707;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-around;
+}
+.main-nav a, .main-nav a:visited {
+  color: #070707;
+  padding-left: 1rem;
+  text-decoration: none;
+}
+.main-nav a:hover {
+  color: #EF4723;
+}
+.no-sweat {
+  background: url('./img/no-sweat_no-glory_jonathan-borba.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  border-top: 1px solid #d6cbcb;
+  margin-top: .5rem;
+}
+.no-sweat p {
+  font-size: 2.8rem;
+  font-style: italic;
+  font-weight: bold;
+}
+.orange {
+  color: #EF4723;
+}
+.black {
+  color: #000000;
+}
+.btn-container {
+  height: 75vh;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-right: 20px;
+}
+.register-btn {
+  color: #ffffff;
+  background: #EF4723;
+  border: 1px solid gray;
+  padding: 1rem;
+  font-size: 2rem;
+}
+.register-btn:hover {
+  background: #000000;
+}
+.walking {
+  background: url('./img/walking_ketut-subiyanto.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 60vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+  border-top: 1px solid #d6cbcb;
+  margin-top: 1rem;
+}
+.shade-container {
+  background-color: #000000;
+  opacity: 80%;
+  height: 50vh;
+  margin-right: 2.5rem;
+  width: 30%;
+  padding: 2.25rem;
+}
+.shade-container p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  opacity: 100%;
+  color: #ffffff;
+  font-weight: normal;
+}
+.shade-container p div {
+  display: inline-block;
+}
+.shade-container p a, .shade-container p a:visited {
+  color: #EF4723;
+  padding-left: 1rem;
+  text-decoration: none;
+}
+.shade-container p a:hover {
+  color: #ffffff;
+}
+.membership {
+  background: url('./img/sit-stretch_jonathan-borba.jpg');
+  background-color: #FBE5D6;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 58vh;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+  border-top: 1px solid #d6cbcb;
+  margin-top: 1.05rem;
+}
+.membership-ad-container {
+  height: 50vh;
+  width: 40%;
+  padding: 2.25rem;
+}
+.membership-ad-container p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  opacity: 100%;
+  color: #ffffff;
+  font-weight: normal;
+}
+.membership-ad-container p div {
+  display: inline-block;
+}
+.membership-ad-container p a, .membership-ad-container p a:visited {
+  color: #EF4723;
+  padding-left: 1rem;
+  text-decoration: none;
+}
+.membership-ad-container p a:hover {
+  color: #ffffff;
+}
+.App {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #EF4723;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

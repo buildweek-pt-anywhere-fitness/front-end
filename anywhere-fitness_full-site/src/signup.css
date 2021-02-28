@@ -1,0 +1,41 @@
+.signup-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: initial;
+  /* align-items: initial; */
+}
+.signup-form label {
+  width: 50%;
+  margin-bottom: 15px;
+}
+.signup-form input {
+  width: 90%;
+}
+.signup-form .email-label {
+  width: 80%;
+}
+.signup-form .exp-label, .signup-form .pay-label {
+  width: 30%;
+  text-align: center;
+}
+.signup-form h3, .signup-form h4 {
+  width: 100%;
+  margin: 10px 0;
+}
+.signup-form .cb-input {
+  width: initial;
+}
+.signup-form .code-input {
+  display: block;
+  width: 40px;
+}
+.signup-form .submit-btn {
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 100px;
+  padding: 10px 20px;
+  border-radius: 12px;
+}
