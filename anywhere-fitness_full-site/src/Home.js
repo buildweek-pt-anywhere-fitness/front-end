@@ -121,9 +121,11 @@ function App() {
                             <li>Pre-record trainings</li>
                             <li>Track sales & channels</li>
                             <li>Get business support</li>
-                            <li>Accept payments online, in-app, and in-person</li>
+                            <li>Accept payments<br/>
+                            online, in-app<br/>
+                            and in-person</li>
                             </ul></p>
-                        <div className="btn-container"><button class="register-btn" type="submit">Join Now!</button></div>
+                        <div className="btn-container"><button class="trainer-register-btn" type="submit">Register Now!</button></div>
                     </div>
                 </div>
             </section>

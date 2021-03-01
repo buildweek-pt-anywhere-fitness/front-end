@@ -423,7 +423,8 @@ p.small {
   margin-top: 1.05rem;
 }
 .trainer-special-ad-container {
-  width:50%;
+  width:48%;
+  margin-right: 1rem;
 }
 .trainer-special-ad-container h2 {
   font-family:Arial, Helvetica, sans-serif;
@@ -431,6 +432,7 @@ p.small {
   letter-spacing: .25rem;
   font-weight: 100;
   color:#ffffff;
+  margin-top: .75rem;
 }
 .trainer-special-ad-container h2 .orange {
   font-weight: bold;
@@ -445,12 +447,31 @@ p.small {
 .trainer-special-ad-container p ul {
   text-align: right;
   list-style-type: disc;
+  direction: rtl;
 }
 .trainer-special-ad-container h2 div, .trainer-special-ad-container p div  {
   display: inline-block;
 }
 .trainer-special-ad-container .small {
   font-size: 1.5rem;
+}
+.trainer-special-ad-container .btn-container {
+  height: 10vh;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 2rem;
+}
+.trainer-special-ad-container .trainer-register-btn {
+  color: #ffffff;
+  background: #000000;
+  border: 1px solid #EF4723;
+  padding: .5rem;
+  font-size: 1.5rem;
+  width: 38%;
+}
+.trainer-special-ad-container .trainer-register-btn:hover {
+  background: #EF4723;
+  color: #ffffff;
 }
 .App {
   text-align: center;
