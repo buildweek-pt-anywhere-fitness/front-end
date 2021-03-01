@@ -55,9 +55,28 @@ h2 {
   color: #000000;
   margin-bottom: 1rem;
 }
+h3 {
+  font-size: 2.1rem;
+  color: #ffffff;
+  margin-top: 1.2rem;
+}
 p {
+  font-size: 1rem;
   color: black;
 }
+p.small {
+  font-size: .75rem;
+}
+.orange {
+  color: #EF4723;
+}
+.black {
+  color: #000000;
+}
+.white {
+  color: white;
+}
+/************* Logo Header ********************************************/
 .logo-header {
   background: url('./img/anywhere-fitness_logo-hdr_bg.png');
   height: 95px;
@@ -69,6 +88,7 @@ p {
   align-items: flex-end;
   flex-wrap: wrap;
 }
+/************* Top Nav / Search Bar **/
 .app-nav-search-bar {
   margin-top: 13px;
   width: 33%;
@@ -111,6 +131,7 @@ p {
   padding: 5px;
   font-weight: bold;
 }
+/************* Main (second) Nav Bar *****************************************/
 .main-nav {
   margin-top: 25px;
   width: 100%;
@@ -128,6 +149,7 @@ p {
 .main-nav a:hover {
   color: #EF4723;
 }
+/************* "No Sweat" Ad (first section) *****************************************/
 .no-sweat {
   background: url('./img/no-sweat_no-glory_jonathan-borba.png');
   background-repeat: no-repeat;
@@ -148,12 +170,6 @@ p {
   font-style: italic;
   font-weight: bold;
 }
-.orange {
-  color: #EF4723;
-}
-.black {
-  color: #000000;
-}
 .btn-container {
   height: 75vh;
   display: flex;
@@ -170,6 +186,7 @@ p {
 .register-btn:hover {
   background: #000000;
 }
+/************* Walking Ad (second section) *****************************************/
 .walking {
   background: url('./img/walking_ketut-subiyanto.png');
   background-repeat: no-repeat;
@@ -212,6 +229,7 @@ p {
 .shade-container p a:hover {
   color: #ffffff;
 }
+/************* Membership Ad (third section) *****************************************/
 .membership {
   background: url('./img/sit-stretch_jonathan-borba.jpg');
   background-color: #FBE5D6;
@@ -262,6 +280,177 @@ p {
 }
 .membership-ad-container .register-btn:hover {
   background: #000000;
+}
+/************* Trainers Ad (fourth section) *****************************************/
+.trainers {
+  background-color: #181717;
+  height: 128vh;
+  display: flex;
+  flex-direction: row;
+  padding: 1.25rem;
+  border-top: 1px solid #d6cbcb;
+  margin-top: 1.05rem;
+}
+.first-trainer-container {
+  background: url('./img/female-trainer_mikhail-nilov.jpg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  height: 128vh;
+  width: 40%;
+  margin-right: 1.25rem;
+  padding-right: 2.8rem;
+}
+.second-trainer-container {
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  width: 60%;
+}
+.second-trainer-img {
+  background: url('./img/boxing-trainer_thisisengineering.jpg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.trainer-ad-container p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: normal;
+  color: white;
+}
+.trainer-ad-container p div {
+  display: inline-block;
+}
+.trainer-ad-container .btn-container {
+  height: 10vh;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: -2.5rem;
+  margin-right: 20px;
+}
+.trainer-ad-container h3{
+  display: inline-block;
+}
+.trainer-ad-container .trainer-register-btn {
+  color: #ffffff;
+  background: #000000;
+  border: 1px solid #EF4723;
+  padding: .5rem;
+  font-size: 1.5rem;
+  width: 40%;
+}
+.trainer-ad-container .trainer-register-btn:hover {
+  background: #EF4723;
+  color: #ffffff;
+}
+/************* Choose Your Workout (fifth section) *****************************************/
+.choose-workout {
+  background: #EF4723;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  padding-bottom: 1.75rem;
+  border-top: 1px solid #d6cbcb;
+  margin-top: 1.05rem;
+}
+.choose-workout-title-img {
+  background: url('./img/choose-your-workout-title.png');
+  background-repeat: no-repeat;
+  height: 110vh;
+  width: 5rem;
+}
+.workouts-container {
+  width: 92%;
+}
+.workout-type-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: fit-content;
+}
+.workout-type {
+  width: 32%;
+  border: 1px solid white;
+  overflow: hidden;
+  background: black;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+.workout-btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 8vh;
+  width: 91.9%;
+  margin-left: 5rem;
+}
+.workout-btn-container .btn-container {
+  width: 100%;
+}
+.workout-btn-container .more-btn {
+  color: #ffffff;
+  background: black;
+  border: 1px solid gray;
+  padding: .5rem;
+  font-size: 1.75rem;
+  font-weight: 100;
+  letter-spacing: .5rem;
+}
+.workout-btn-container .more-btn:hover {
+  background: #EF4723;
+}
+/************* New Trainer Special (sixth section) *****************************************/
+.trainer-special {
+  background: url('./img/strong-man_pikx-by-panther2.jpg');
+  background-color: #FBE5D6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.75rem;
+  border-top: 1px solid #d6cbcb;
+  margin-top: 1.05rem;
+}
+.trainer-special-ad-container {
+  width:50%;
+}
+.trainer-special-ad-container h2 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 3.25rem;
+  letter-spacing: .25rem;
+  font-weight: 100;
+  color:#ffffff;
+}
+.trainer-special-ad-container h2 .orange {
+  font-weight: bold;
+}
+.trainer-special-ad-container p {
+  font-family:Arial, Helvetica, sans-serif;
+  color:#ffffff;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: .15rem;
+}
+.trainer-special-ad-container p ul {
+  text-align: right;
+  list-style-type: disc;
+}
+.trainer-special-ad-container h2 div, .trainer-special-ad-container p div  {
+  display: inline-block;
+}
+.trainer-special-ad-container .small {
+  font-size: 1.5rem;
 }
 .App {
   text-align: center;
