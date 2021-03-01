@@ -5,7 +5,6 @@
   max-width: 400px;
   margin: 0 auto;
   text-align: initial;
-  /* align-items: initial; */
 }
 .signup-form label {
   width: 50%;
@@ -25,7 +24,7 @@
   width: 100%;
   margin: 10px 0;
 }
-.signup-form .cb-input {
+.signup-form .training-input {
   width: initial;
 }
 .signup-form .code-input {
