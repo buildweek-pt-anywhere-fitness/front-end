@@ -1,8 +1,42 @@
 import React from 'react';
+import {useState, useEffect} from 'react';
 import {BrowserRouter, Link, Route} from 'react-router-dom';
+import Checkbox from './Checkbox';
 import '../signup.css'
 
 function Signup() {
+  const [client, setClient] = useState({
+    fname: '',
+    lname: '',
+    email: '',
+    town: '',
+    locationZip: '',
+    exp: '',
+    training: false,
+    payment: '',
+    street: '',
+    city: '',
+    state: '',
+    paymentZip: '',
+    cardName: '',
+    cardNumber: '',
+    code: ''
+  });
+
+  const trainingOptions = ['Running', 'Calisthenics', 'Power Lifting', 'Boxing', 'Cycling', 'Weight Lifting', 'Yoga', 'Dancing'];
+
+  const handleChange = event => {
+    const {checked, value, name, type} = event.target;
+    const valueToUse = type === 'checkbox' ? checked : value;
+    setClient({
+      ...client, [name]: valueToUse
+    })
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    alert('Thankyou for signing up!!');
+  }
   return (
     <div>
       <h3>Please fill out the sign up form</h3>
@@ -11,30 +45,37 @@ function Signup() {
           <input
             name="fname"
             type="text"
+            value={client.fname}
+            onChange={handleChange}
           />
         </label>
         <label> Last Name
           <input
             name="lname"
             type="text"
+            value={client.lname}
+            onChange={handleChange}
           />
         </label>
         <label className='email-label'> Email
           <input
             name="email"
             type="email"
+            value={client.email}
           />
         </label>
         <label>Town
           <input
             name="town"
             type="text"
+            value={client.town}
           />
         </label>
         <label> Zip Code
           <input
-            name="zip"
+            name="locationZip"
             type="number"
+            value={client.locationZip}
           />
         </label>
         <h3>Experience Level</h3>
@@ -42,69 +83,31 @@ function Signup() {
           <input
             name="exp"
             type="radio"
+            value="beginner"
+            checked={client.exp === 'beginner'}
           />
         </label>
         <label className="exp-label"> Intermediate
           <input
             name="exp"
             type="radio"
+            value="internmediate"
+            checked={client.exp === 'internmediate'}
           />
         </label>
         <label className="exp-label"> Advanced
           <input
             name="exp"
             type="radio"
+            value="advanced"
+            checked={client.exp === 'advanced'}
           />
         </label>
         <h3>Preferred Training Style</h3>
-        <label>
-          <input className="cb-input"
-            name=""
-            type="checkbox"
-          /> Running
-        </label>
-        <label>
-          <input className="cb-input"
-            name=""
-            type="checkbox"
-          /> Cycling
-        </label>
-        <label>
-          <input className="cb-input"
-            name=""
-            type="checkbox"
-          /> Calisthenics
-        </label>
-        <label>
-          <input className="cb-input"
-            name=""
-            type="checkbox"
-          /> Weight Lifting
-        </label>
-        <label>
-          <input className="cb-input"
-            name=""
-            type="checkbox"
-          /> Power Lifting
-        </label>
-        <label>
-          <input className="cb-input"
-            name=""
-            type="checkbox"
-          /> Yoga
-        </label>
-        <label>
-          <input className="cb-input"
-            name=""
-            type="checkbox"
-          /> Boxing
-        </label>
-        <label>
-          <input className="cb-input"
-            name=""
-            type="checkbox"
-          /> Dancing
-        </label>
+        {trainingOptions.map(option => {
+          return <Checkbox name={option} change={handleChange} checked={client.training} />;
+        })}
+        
         <h3>Payment Information</h3>
         <label className="pay-label"> Visa
           <input
@@ -145,7 +148,7 @@ function Signup() {
         </label>
         <label> Zip Code
           <input
-            name="zip"
+            name="paymentZip"
             type="text"
           />
         </label>
@@ -168,7 +171,7 @@ function Signup() {
             type="number"
           />
         </label>
-        <button className="submit-btn">Submit</button>
+        <button className="submit-btn" onClick={handleSubmit}>Submit</button>
       </form>
     </div>
   );
