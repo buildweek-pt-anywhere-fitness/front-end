@@ -38,7 +38,7 @@ function App() {
                     </nav>
                 </div>
             </div>
-            <section classnName="first-section">
+            <section className="first-section">
                 <div className="no-sweat">
                     <p className="orange">No Sweat. No Glory.
                     <p className="black">Game On.</p></p>
@@ -53,7 +53,7 @@ function App() {
                     </div>
                 </div>
             </section>
-            <section classnName="third-section">
+            <section className="third-section">
                 <div className="membership">
                     <div className="membership-ad-container">
                         <h2>Membership Is Easy!</h2>
@@ -62,7 +62,7 @@ function App() {
                     </div>
                 </div>
             </section>
-            <section classnName="fourth-section">
+            <section className="fourth-section">
                 <div className="trainers">
                     <div className="first-trainer-container"></div>
                     <div className="second-trainer-container">
@@ -76,7 +76,7 @@ function App() {
                     </div>
                 </div>
             </section>
-            <section classnName="fifth-section">
+            <section className="fifth-section">
                 <div className="choose-workout">
                     <div className="choose-workout-title-img"></div>
                     <div className="workouts-container">
@@ -96,7 +96,7 @@ function App() {
                     </div>
                 </div>
             </section>
-            <section classnName="sixth-section">
+            <section className="sixth-section">
                 <div className="trainer-special">
                     <div className="trainer-special-ad-container">
                         <h2><div className="orange">New</div> Trainer Special!</h2>
@@ -129,6 +129,59 @@ function App() {
                     </div>
                 </div>
             </section>
+            <footer>
+                <section className="bottom">
+                    <div className="sitewide-footer">
+                        <div className="footer-container">
+                            <h4><div className="orange">Anywhere</div> Fitness</h4>
+                            <a href="">About The AF App</a>
+                            <a href="">About The AF Team</a>
+                            <a href="">AF Careers</a>
+                            <a href="">The AF Blog</a>
+                            <a href="">The AF Shop</a>
+                        </div>
+                        <div className="footer-container">
+                            <h4><div className="orange">Anywhere</div> Fitness</h4>
+                            <a href="">About The AF App</a>
+                            <a href="">About The AF Team</a>
+                            <a href="">AF Careers</a>
+                            <a href="">The AF Blog</a>
+                            <a href="">The AF Shop</a>
+                        </div>
+                        <div className="footer-container">
+                            <h4><div className="orange">Anywhere</div> Fitness</h4>
+                            <a href="">About The AF App</a>
+                            <a href="">About The AF Team</a>
+                            <a href="">AF Careers</a>
+                            <a href="">The AF Blog</a>
+                            <a href="">The AF Shop</a>
+                        </div>
+                        <div className="footer-container">
+                            <h4><div className="orange">Anywhere</div> Fitness</h4>
+                            <a href="">About The AF App</a>
+                            <a href="">About The AF Team</a>
+                            <a href="">AF Careers</a>
+                            <a href="">The AF Blog</a>
+                            <a href="">The AF Shop</a>
+                        </div>
+                    </div>
+                </section>
+                <section className="footer-copyright">
+                    <div className="copyright-container">
+                        <div className="copyright">
+                            <p>Copyright &copy; 2021 by Shenica R. Graham and GSyndicates, LLC. All Rights Reserved</p>
+                        </div>
+                        <div className="copyright-search">
+                            <div className="search-bar">
+                                <form>
+                                    <input type="text" className="search-site" name="name" placeholder="Search This Site"></input>
+                                    <button className="search-btn" type="submit">GO</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </footer>
         </div>
     );
 }

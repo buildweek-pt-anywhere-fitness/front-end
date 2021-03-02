@@ -60,6 +60,12 @@ h3 {
   color: #ffffff;
   margin-top: 1.2rem;
 }
+h4 {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin-top: 1.5rem;
+  letter-spacing: .25rem;
+}
 p {
   font-size: 1rem;
   color: black;
@@ -163,7 +169,7 @@ p.small {
   flex-wrap: wrap;
   padding-top: 1rem;
   border-top: 1px solid #d6cbcb;
-  margin-top: .5rem;
+  margin-top: .3rem;
 }
 .no-sweat p {
   font-size: 2.8rem;
@@ -200,7 +206,7 @@ p.small {
   padding-top: 2.75rem;
   padding-bottom: 2.75rem;
   border-top: 1px solid #d6cbcb;
-  margin-top: 1rem;
+  margin-top: .3rem;
 }
 .shade-container {
   background-color: #000000;
@@ -241,7 +247,7 @@ p.small {
   padding-top: 1.5rem;
   padding-bottom: 2.75rem;
   border-top: 1px solid #d6cbcb;
-  margin-top: 1.05rem;
+  margin-top: .3rem;
 }
 .membership-ad-container {
   width: 40%;
@@ -289,7 +295,7 @@ p.small {
   flex-direction: row;
   padding: 1.25rem;
   border-top: 1px solid #d6cbcb;
-  margin-top: 1.05rem;
+  margin-top: .3rem;
 }
 .first-trainer-container {
   background: url('./img/female-trainer_mikhail-nilov.jpg');
@@ -358,7 +364,7 @@ p.small {
   padding-top: 1.5rem;
   padding-bottom: 1.75rem;
   border-top: 1px solid #d6cbcb;
-  margin-top: 1.05rem;
+  margin-top: .3rem;
 }
 .choose-workout-title-img {
   background: url('./img/choose-your-workout-title.png');
@@ -414,13 +420,13 @@ p.small {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 85vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 1.75rem;
   border-top: 1px solid #d6cbcb;
-  margin-top: 1.05rem;
+  margin-top: .3rem;
 }
 .trainer-special-ad-container {
   width:48%;
@@ -472,6 +478,75 @@ p.small {
 .trainer-special-ad-container .trainer-register-btn:hover {
   background: #EF4723;
   color: #ffffff;
+}
+/************* Footer (bottom section) *****************************************/
+.bottom {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin-top: .3rem;
+}
+.sitewide-footer {
+  background-color: black;
+  color: #ffffff;
+  height: 33vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid #d6cbcb;
+  padding-left: 2rem;
+}
+.footer-container {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.75rem;
+}
+.footer-container h4 div {
+  display: inline-block;
+}
+.footer-container a, .footer-container a:visited {
+  color: #797979;
+  font-size: 1rem;
+  font-weight: normal;
+  text-decoration: none;
+}
+.footer-container a:hover {
+  color: #EF4723;
+}
+/************* Footer (copyright section) *****************************************/
+.footer-copyright {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin-top: .3rem;
+}
+.copyright-container {
+  background-color: #262626;
+  color: #A6A6A6;
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid #d6cbcb;
+  padding-left: 2rem;
+}
+.copyright {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 1.75rem;
+}
+.copyright p {
+  color: #868686;
+  margin: auto;
+  font-size: .8rem;
+  font-style: italic;
+}
+.copyright-search {
+  width: 28%;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: .5rem;
 }
 .App {
   text-align: center;
