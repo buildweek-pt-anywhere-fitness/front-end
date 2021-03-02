@@ -26,7 +26,11 @@ function Signup() {
   const trainingOptions = ['Running', 'Calisthenics', 'Power Lifting', 'Boxing', 'Cycling', 'Weight Lifting', 'Yoga', 'Dancing'];
 
   const handleChange = event => {
-
+    const {checked, value, name, type} = event.target;
+    const valueToUse = type === 'checkbox' ? checked : value;
+    setClient({
+      ...client, [name]: valueToUse
+    })
   }
 
   function handleSubmit(event) {
@@ -101,7 +105,7 @@ function Signup() {
         </label>
         <h3>Preferred Training Style</h3>
         {trainingOptions.map(option => {
-          return <Checkbox name={option} />;
+          return <Checkbox name={option} change={handleChange} checked={client.training} />;
         })}
         
         <h3>Payment Information</h3>
