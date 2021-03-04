@@ -10,12 +10,12 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <Signup />
       <Router>
         <Route exact path='/instructorclasses' component={Instructor} />
         <Route path='/instructorclasses/:id' component={UpdateClass} />
         <Route path='/newclass' component={CreateClass} />
       </Router>
-      <Signup />
     </div>
   );
 }
