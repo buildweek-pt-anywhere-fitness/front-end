@@ -35,8 +35,7 @@ function UpdateClass() {
         axiosWithAuth().put(`/api/classes/${course.id}`, course)
         .then(res => {
             console.log(res);
-            push('/classes');
-            // setCourse(res.data);
+            push('/instructorclasses');
         })
         .catch(err => console.log(err));
     };

@@ -28,6 +28,7 @@ function CreateClass() {
 
     return (
         <div>
+            <h2>New Class</h2>
             <form onSubmit={handleSubmit}>
                 <label htmlFor='name'>Name of class:
                     <input
