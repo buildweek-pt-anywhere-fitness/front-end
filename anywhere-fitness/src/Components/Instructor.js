@@ -32,7 +32,6 @@ function Instructor() {
                         <p>Registered: {c.registered}</p>
                         <p>Max class size: {c.max_class_size}</p>
                         <Link to={`/instructorclasses/${c.id}`}>edit</Link>
-                        <button onClick={() => deleteClass(c.id)}>Delete</button>
                     </div>
                 ))}
         </div>
