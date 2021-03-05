@@ -22,7 +22,6 @@ function Instructor() {
     return (
         <div>
             <Link to='/newclass'>Add class</Link>
-            <div className='workouts'>
                 {classes.map(c => (
                     <div key={c.id} className='workout'>
                         <h3>{c.name}</h3>
@@ -36,7 +35,6 @@ function Instructor() {
                         <Link to={`/instructorclasses/${c.id}`}>edit</Link>
                     </div>
                 ))}
-            </div>
         </div>
     );
 };
