@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import axiosWithAuth from '../utils/axiosWithAuth';
 
 import './Instructor.css';
 
 function Instructor() {
+    const { push } = useHistory();
+
     const [classes, setClasses] = useState([]);
 
     useEffect(() => {
@@ -21,7 +23,8 @@ function Instructor() {
     }
     return (
         <div>
-            <Link to='/newclass'>Add class</Link>
+            <button onClick={handleNew}>Add Class</button>
+            <div className='workouts'>
                 {classes.map(c => (
                     <div key={c.id} className='workout'>
                         <h3>{c.name}</h3>
@@ -32,10 +35,13 @@ function Instructor() {
                         <p>Location: {c.location}</p>
                         <p>Registered: {c.registered}</p>
                         <p>Max class size: {c.max_class_size}</p>
-                        <Link to={`/instructorclasses/${c.id}`}>edit</Link>
-                        
+                        <button onClick={() => {push(`/instructorclasses/${c.id}`)}}>
+                            Edit
+                        </button>
+                        <button onClick={() => deleteClass(c.id)}>Delete</button>
                     </div>
                 ))}
+            </div>
         </div>
     );
 };
