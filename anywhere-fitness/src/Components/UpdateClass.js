@@ -32,7 +32,7 @@ function UpdateClass() {
 
     const handleUpdate = e => {
         e.preventDefault();
-        axiosWithAuth().put(`/api/classes/${course.id}`, course)
+        axiosWithAuth().put(`https://api-anywhere-fitness.herokuapp.com/api/classes/${course.id}`, course)
         .then(res => {
             console.log(res);
             push('/instructorclasses');
