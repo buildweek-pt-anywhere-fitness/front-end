@@ -13,7 +13,6 @@ function App() {
     <div className="App">
       App is online.
       <Router>
-        <Route path='/signup' component={Signup} />
         <Route exact path='/instructorclasses' component={Instructor} />
         <Route path='/instructorclasses/:id' component={UpdateClass} />
         <Route path='/newclass' component={CreateClass} />

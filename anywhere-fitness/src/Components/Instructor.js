@@ -23,6 +23,7 @@ function Instructor() {
     }
     return (
         <div>
+            {/* <Link to='/newclass'>Add class</Link> */}
             <button onClick={handleNew}>Add Class</button>
             <div className='workouts'>
                 {classes.map(c => (
@@ -35,6 +36,7 @@ function Instructor() {
                         <p>Location: {c.location}</p>
                         <p>Registered: {c.registered}</p>
                         <p>Max class size: {c.max_class_size}</p>
+                        {/* <Link to={`/instructorclasses/${c.id}`}>edit</Link> */}
                         <button onClick={() => {push(`/instructorclasses/${c.id}`)}}>
                             Edit
                         </button>
