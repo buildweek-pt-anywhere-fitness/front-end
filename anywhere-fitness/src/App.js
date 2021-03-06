@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
 import Login from './components/Login';
-import Signup from './components/Signup';
+import Signup from './components/Signup.js';
 import Instructor from './components/Instructor';
 import CreateClass from './components/CreateClass';
 import UpdateClass from './components/UpdateClass';
