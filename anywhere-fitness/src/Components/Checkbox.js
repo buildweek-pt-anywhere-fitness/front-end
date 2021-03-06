@@ -1,15 +1,15 @@
 import React from 'react';
 
 function Checkbox(props) {
-  const {name, change, checked} = props;
+  const {name, change} = props;
   
   return (
     <label>
       <input className="training-input"
         name="training"
         type="checkbox"
-        checked={checked}
         onChange={change}
+        value={name}
       /> {name}
     </label>
   );

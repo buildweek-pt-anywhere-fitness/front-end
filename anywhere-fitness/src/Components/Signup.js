@@ -12,7 +12,8 @@ function Signup() {
     town: '',
     locationZip: '',
     exp: '',
-    training: false,
+    // checked: false,
+    training: [],
     payment: '',
     street: '',
     city: '',
@@ -25,12 +26,20 @@ function Signup() {
 
   const trainingOptions = ['Running', 'Calisthenics', 'Power Lifting', 'Boxing', 'Cycling', 'Weight Lifting', 'Yoga', 'Dancing'];
 
-  const handleChange = event => {
-    const {checked, value, name, type} = event.target;
-    const valueToUse = type === 'checkbox' ? checked : value;
-    setClient({
-      ...client, [name]: valueToUse
-    })
+  function handleChange(event) {
+    let value = event.target.value;
+    setClient({...client, [event.target.name]: value })
+  }
+
+  function handleCheckbox(event) {
+    if (event.target.checked) {
+      // Add topping to array
+      setClient({...client, training: [...client.training, event.target.value ]})
+    } else {
+      // Remove training from array
+      let updated = client.training.filter(item => item !== event.target.value)
+      setClient({...client, training: updated })
+    }
   }
 
   function handleSubmit(event) {
@@ -105,7 +114,7 @@ function Signup() {
         </label>
         <h3>Preferred Training Style</h3>
         {trainingOptions.map(option => {
-          return <Checkbox name={option} change={handleChange} checked={client.training} />;
+          return <Checkbox name={option} change={handleCheckbox} />;
         })}
         
         <h3>Payment Information</h3>
