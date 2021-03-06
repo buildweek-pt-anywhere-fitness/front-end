@@ -1,9 +1,9 @@
 import React from 'react';
 import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
-import Signup from './Components/Signup.js';
-import Instructor from './Components/Instructor';
-import CreateClass from './Components/CreateClass';
-import UpdateClass from './Components/UpdateClass';
+import Signup from './components/Signup.js';
+import Instructor from './components/Instructor';
+import CreateClass from './components/CreateClass';
+import UpdateClass from './components/UpdateClass';
 import logo from './logo.svg';
 import './App.css';
 import PrivateRoute from "./Components/PrivateRoute";
