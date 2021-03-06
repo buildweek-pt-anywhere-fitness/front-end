@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import axiosWithAuth from '../utils/axiosWithAuth';
 
 function CreateClass() {
+    const { push } = useHistory();
+
     const [classInfo, setClassInfo] = useState({
         name: '',
         type: '',
@@ -24,6 +27,7 @@ function CreateClass() {
             console.log(res);
         })
         .catch(err => console.log(err));
+        push('/instructorclasses');
     };
 
     return (
