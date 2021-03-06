@@ -14,9 +14,9 @@ function App() {
       <Router>
         <Route exact path='/login' component={Login} />
         <Route exact path='/signup' component={Signup} />
-        <Route exact path='/instructorclasses' component={Instructor} />
-        <Route path='/instructorclasses/:id' component={UpdateClass} />
-        <Route path='/newclass' component={CreateClass} />
+        <PrivateRoute exact path='/instructorclasses' component={Instructor} />
+        <PrivateRoute path='/instructorclasses/:id' component={UpdateClass} />
+        <PrivateRoute path='/newclass' component={CreateClass} />
       </Router>
     </div>
   );
