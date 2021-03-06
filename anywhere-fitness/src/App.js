@@ -6,7 +6,7 @@ import Instructor from './components/Instructor';
 import CreateClass from './components/CreateClass';
 import UpdateClass from './components/UpdateClass';
 import './App.css';
-import PrivateRoute from "./components/PrivateRoute";
+import PrivateRoute from "./Components/PrivateRoute";
 
 function App() {
   return (

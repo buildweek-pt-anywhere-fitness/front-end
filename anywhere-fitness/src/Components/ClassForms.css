@@ -1,0 +1,23 @@
+.pagediv {
+    height: 100vh;
+}
+.formdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid grey;
+    width: 400px;
+    box-shadow: 8px 8px;
+}
+.label {
+    margin: 20px;
+}
+.btn {
+    margin-bottom: 20px;
+}

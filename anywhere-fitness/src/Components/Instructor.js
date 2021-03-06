@@ -23,9 +23,10 @@ function Instructor() {
         .catch(err => console.log(err))
     }
 
+    
     return (
         <div>
-           <Link to='/newclass'>Add class</Link>
+             <Link to='/newclass'>Add class</Link>
             {classes.map(c => (
                 <div key={c.id}>
                     <h3>{c.name}</h3>
