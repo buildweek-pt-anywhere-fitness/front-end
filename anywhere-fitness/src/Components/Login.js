@@ -22,9 +22,9 @@ export default function Login() {
         console.log(form)
         axiosWithAuth().post('https://api-anywhere-fitness.herokuapp.com/api/users/login', form)
             .then(res => {
-                console.log(res)
-                if(res.data.payload) {
-                    localStorage.setItem('token', res.data.payload)
+                console.log(res.data)
+                if(res.cookies.token) {
+                    localStorage.setItem('token', res.data.token)
                     history.push('/instructorclasses')
                 }
             })
