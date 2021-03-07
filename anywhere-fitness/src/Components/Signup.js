@@ -10,6 +10,8 @@ function Signup() {
   const billingOptions = ['Street', 'City', 'State', 'Zip Code', 'Cardholder Name', 'Card Number', 'Security Code'];
   const paymentOptions = ['Visa', 'Venmo', 'Paypal'];
   const personal = ['First Name', 'Last Name', 'Email', 'Town', 'zip'];
+  // let users = [];
+  const [users, setUser] = useState([]);
   
   const [client, setClient] = useState({
     first_name: '',
@@ -28,6 +30,7 @@ function Signup() {
     card_number: '',
     security_code: ''
   });
+  console.log(users); 
 
   function handleChange(event) {
     let value = event.target.value;
@@ -47,19 +50,40 @@ function Signup() {
 
   function handleSubmit(event) {
     event.preventDefault();
+    setUser([...users, client]);
+    // users.push(client);
     alert('Thankyou for signing up!!');
+    setClient({
+      first_name: '',
+      last_name: '',
+      email: '',
+      town: '',
+      zip: '',
+      exp: '',
+      training: [],
+      payment: '',
+      street: '',
+      city: '',
+      state: '',
+      zip_code: '',
+      cardholder_name: '',
+      card_number: '',
+      security_code: ''
+    });
   }
   return (
     <div>
       <h3>Please fill out the sign up form</h3>
       <form className='signup-form'>
         {personal.map(option => {
+          let formatOption = option.toLowerCase().replace(' ', '_');
+          console.log('Format Option', formatOption);
           return (
             <label> {option}
               <input
-              name={option.toLowerCase().replace(' ', '_')}
+              name={formatOption}
               type='text'
-              value={client.option}
+              value={client[formatOption]}
               onChange={handleChange}
               />
             </label>
@@ -73,6 +97,7 @@ function Signup() {
             type='radio'
             value='beginner'
             checked={client.exp === 'beginner'}
+            onChange={handleChange}
           />
         </label>
         <label className='exp-label'> Intermediate
@@ -81,6 +106,7 @@ function Signup() {
             type='radio'
             value='internmediate'
             checked={client.exp === 'internmediate'}
+            onChange={handleChange}
           />
         </label>
         <label className='exp-label'> Advanced
@@ -89,6 +115,7 @@ function Signup() {
             type='radio'
             value='advanced'
             checked={client.exp === 'advanced'}
+            onChange={handleChange}
           />
         </label>
         <h3>Preferred Training Style</h3>
