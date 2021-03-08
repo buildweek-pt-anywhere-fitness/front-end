@@ -5,7 +5,7 @@ function Status(props) {
   
   return (
     <div>
-      {users.length > 0 ? `Hi ${users[users.length-1].first_name}` : <div>No Users registerd</div>}
+      {users.length > 0 ? `Hi ${users[users.length-1].first_name}` : <div>No Users registered</div>}
       {/* {console.log(users.length)} */}
     </div>
   );
