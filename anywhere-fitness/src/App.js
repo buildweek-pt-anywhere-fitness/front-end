@@ -4,11 +4,22 @@ import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
 import Signup from './Components/Signup.js';
 import Status from './Components/Status.js';
 import Home from './Components/Home.js';
+import axios from 'axios';
 import logo from './logo.svg';
 import './App.css';
 
 function App(props) {
   const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    axios.get('https://api-anywhere-fitness.herokuapp.com')
+    .then(response => {
+      console.log('Response', response);
+    })
+    .catch(error => {
+      console.log('see error', error);
+    })
+  }, [])
 
   return (
     <div className="App">
