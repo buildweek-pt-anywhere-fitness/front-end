@@ -6,7 +6,13 @@ import Status from './Components/Status.js';
 import Home from './Components/Home.js';
 import axios from 'axios';
 import logo from './logo.svg';
+import Login from './components/Login';
+import Signup from './components/Signup.js';
+import Instructor from './components/Instructor';
+import CreateClass from './components/CreateClass';
+import UpdateClass from './components/UpdateClass';
 import './App.css';
+import PrivateRoute from "./Components/PrivateRoute";
 
 function App(props) {
   const [users, setUsers] = useState([]);
@@ -29,6 +35,11 @@ function App(props) {
       <Route exact path='/'><Home /></Route>
       <Route path='/register'><Register users={users} setUsers={setUsers} /></Route>
       <Route path='/status'><Status users={users} /></Route>
+      <Route exact path='/login' component={Login} />
+      <Route exact path='/signup' component={Signup} />
+      <PrivateRoute exact path='/instructorclasses' component={Instructor} />
+      <PrivateRoute path='/instructorclasses/:id' component={UpdateClass} />
+      <PrivateRoute path='/newclass' component={CreateClass} />
     </div>
   );
 }
