@@ -1,7 +1,7 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
 import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
-import Signup from './Components/Signup.js';
+import Register from './Components/Register.js';
 import Status from './Components/Status.js';
 import Home from './Components/Home.js';
 import axios from 'axios';
@@ -25,10 +25,10 @@ function App(props) {
     <div className="App">
       <Link to='/'><button>Home</button></Link>
       <Link to='/signup'><button>Register</button></Link>
-      <Link to='/status'><button>Status</button></Link>
+      <Link to='/register'><button>Status</button></Link>
       <Route exact path='/'><Home /></Route>
-      <Route path='/signup'><Signup users={users} setUsers={setUsers} /></Route>
-      <Route path='/status'><Status users={users} /></Route>
+      <Route path='/signup'><Register users={users} setUsers={setUsers} /></Route>
+      <Route path='/register'><Status users={users} /></Route>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react';
 import {BrowserRouter, Link, Route} from 'react-router-dom';
 import '../signup.css'
 
-function Signup(props) {
+function Register(props) {
   const trainingOptions = ['Running', 'Calisthenics', 'Power Lifting', 'Boxing', 'Cycling', 'Weight Lifting', 'Yoga', 'Dancing'];
   const billingOptions = ['Street', 'City', 'State', 'Zip Code', 'Cardholder Name', 'Card Number', 'Security Code'];
   const paymentOptions = ['Visa', 'Venmo', 'Paypal'];
@@ -154,4 +154,4 @@ function Signup(props) {
   );
 }
 
-export default Signup;
+export default Register;
