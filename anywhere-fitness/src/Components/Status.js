@@ -1,10 +1,12 @@
 import React from 'react';
 
 function Status(props) {
+  const {users} = props;
   
   return (
     <div>
-      Your status will be shown here.
+      {users.length > 0 ? `Hi ${users[users.length-1].first_name}` : <div>No Users registerd</div>}
+      {/* {console.log(users.length)} */}
     </div>
   );
 }

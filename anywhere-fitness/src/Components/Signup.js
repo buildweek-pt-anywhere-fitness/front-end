@@ -1,17 +1,14 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
 import {BrowserRouter, Link, Route} from 'react-router-dom';
-// import Checkbox from './Checkbox';
-// import Billing from './Billing';
 import '../signup.css'
 
-function Signup() {
+function Signup(props) {
   const trainingOptions = ['Running', 'Calisthenics', 'Power Lifting', 'Boxing', 'Cycling', 'Weight Lifting', 'Yoga', 'Dancing'];
   const billingOptions = ['Street', 'City', 'State', 'Zip Code', 'Cardholder Name', 'Card Number', 'Security Code'];
   const paymentOptions = ['Visa', 'Venmo', 'Paypal'];
   const personal = ['First Name', 'Last Name', 'Email', 'Town', 'zip'];
-  // let users = [];
-  const [users, setUser] = useState([]);
+  const {users, setUsers} = props;
   
   const [client, setClient] = useState({
     first_name: '',
@@ -30,7 +27,6 @@ function Signup() {
     card_number: '',
     security_code: ''
   });
-  console.log(users); 
 
   function handleChange(event) {
     let value = event.target.value;
@@ -50,9 +46,8 @@ function Signup() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    setUser([...users, client]);
-    // users.push(client);
-    alert('Thankyou for signing up!!');
+    setUsers([...users, client]);
+    alert('Thankyou for signing up!! Click the Status button to reveiw your account.');
     setClient({
       first_name: '',
       last_name: '',
